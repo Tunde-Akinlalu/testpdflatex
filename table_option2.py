@@ -1,0 +1,23 @@
+from pylatex import Document, Section, Subsection, Tabular, MultiRow
+doc = Document("multirow")
+section = Section('Multirow Test')
+test2 = Subsection('MultiRow')
+
+table2 = Tabular('|c|c|c|c|')
+table2.add_hline()
+table2.add_row((MultiRow(4, data = 'Multirow'), 1, 2, 3))
+table2.add_hline()
+table2.add_row(('', 3, 4, 5))
+table2.add_hline(2,3 )
+table2.add_row(('', 5, 6, 7))
+table2.add_hline()
+table2.add_row((MultiRow(4, data = 'Multirow2'), '', '', ''))
+table2.add_empty_row()
+table2.add_empty_row()
+table2.add_empty_row()
+table2.add_hline()
+
+test2.append(table2)
+section.append(test2)
+doc.append(section)
+doc.generate_pdf("option2", clean_tex = False)

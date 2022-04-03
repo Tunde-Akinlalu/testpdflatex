@@ -1,0 +1,135 @@
+\documentclass[a4paper,24pt]{article}%
+\usepackage[Helvet]{fontenc}%
+\usepackage[utf8]{inputenc}%
+\usepackage{lmodern}%
+\usepackage{textcomp}%
+\usepackage{geometry}%
+\geometry{margin=0.5in,head=2cm,headsep=10pt,bottom=0.6in,top=1.0cm,rmargin=4cm,tmargin=0.5cm,lmargin=0.8cm,inputenc=utf8}%
+\usepackage{fontspec,xunicode,array}%
+\usepackage{ragged2e}%
+\usepackage{graphicx}%
+\usepackage{tabularx}%
+\usepackage{tabu}%
+%
+%
+%
+\begin{document}%
+\pagestyle{empty}%
+\normalsize%
+\fancyhead{%
+\begin{minipage}[l]{0.9\textwidth}%
+\Large%
+\includegraphics[width = 150px]{/home/tunde/PycharmProjects/testpdflatex/logo.jpeg}%
+\newline{\textbf{PATIENTS EXPERIENCE SURVEY}}%
+\end{minipage}%
+}%
+\fancyhead{%
+\begin{minipage}[R]{0.5\textwidth}%
+\includegraphics[width = 80px]{qr_img.png}%
+\end{minipage}%
+}%
+\section*{}%
+\begin{large}%
+We would like to ask you some questions about your recent stay in Garki Hospital Abuja.%
+\end{large}%
+\newline%
+%
+\begin{large}%
+Your response will help us to improve the quality of our hospital services.%
+\end{large}%
+\newline%
+%
+\begin{large}%
+All your answers are strictly confidential.%
+\end{large}%
+\newline%
+%
+\begin{large}%
+\textbf{Please assess us by shading the box that best represent your experience.}%
+\end{large}%
+\newline%
+%
+\begin{large}%
+Thank you%
+\end{large}%
+\newline%
+%
+\newline%
+
+%
+\renewcommand{\arraystretch}{2}%
+\begin{tabularx}{1.5\textwidth}{X[r], X[r], X[r], X[r], X[r], X[r]}%
+\hline%
+\textbf{Question}&\textbf{Very Poor}&\textbf{Poor}&\textbf{Fair}&\textbf{Good}&\textbf{Excellent}\\%
+\hline%
+\begin{large}%
+The ward (or room) I stayed in was clean%
+\end{large}&\bigcirc&\bigcirc&\bigcirc&\bigcirc&\bigcirc\\%
+\begin{large}%
+The nurses responded to my (or my patient’s) needs effectively%
+\end{large}&\bigcirc&\bigcirc&\bigcirc&\bigcirc&\bigcirc\\%
+\begin{large}%
+The nurses knew enough about my (or my patient’s) condition and treatment%
+\end{large}&\bigcirc&\bigcirc&\bigcirc&\bigcirc&\bigcirc\\%
+\begin{large}%
+The nurses discussed my (or my patient’s) condition and treatment         with me in a way I could understand%
+\end{large}&\bigcirc&\bigcirc&\bigcirc&\bigcirc&\bigcirc\\%
+\begin{large}%
+The nurses responded to my (or my patient’s) requests in a reasonable time%
+\end{large}&\bigcirc&\bigcirc&\bigcirc&\bigcirc&\bigcirc\\%
+\begin{large}%
+I (or my patient) was kept as physically comfortable as I could hope to be%
+\end{large}&\bigcirc&\bigcirc&\bigcirc&\bigcirc&\bigcirc\\%
+\begin{large}%
+I (or my patient) got emotional support from the nurses during my stay%
+\end{large}&\bigcirc&\bigcirc&\bigcirc&\bigcirc&\bigcirc\\%
+\begin{large}%
+Do you have any comment?:%
+\end{large}&&&&&\\%
+\newline%
+%
+&&&&&\\%
+\hline%
+&&&&&\\%
+\hline%
+&&&&&\\%
+\hline%
+\end{tabularx}%
+\newline%
+%
+\newline%
+%
+\setlength{\tabcolsep}{0.2in}%
+\begin{tabu}{X[l], X[r], X[c], X[l]}%
+\begin{large}%
+I am...%
+\end{large}&\begin{large}%
+Male%
+\end{large}&\begin{large}%
+Female%
+\end{large}& \\%
+\begin{large}%
+ %
+\end{large}&\begin{large}%
+\bigcirc%
+\end{large}&\begin{large}%
+\bigcirc%
+\end{large}&\begin{large}%
+ %
+\end{large}\\%
+&&&\\%
+\begin{large}%
+My age is...%
+\end{large}&\begin{large}%
+18 {-} 35years%
+\end{large}&\begin{large}%
+36 {-} 49years%
+\end{large}&\begin{large}%
+50years \& above%
+\end{large}\\%
+ &\bigcirc&\bigcirc&\bigcirc\\%
+\end{tabu}%
+\begin{minipage}{1\textwidth}%
+\bigcircMale%
+\end{minipage}%
+\end{document}
